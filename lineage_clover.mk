@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The Xiaomi-SDM660 Project
+# Copyright (C) 2022 The Xiaomi-SDM660 Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -34,6 +34,14 @@ $(call inherit-product, vendor/lineage/config/common_full_tablet.mk)
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/clover/device.mk)
 
+# Build Description
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_PRODUCT=clover \
+    PRIVATE_BUILD_DESC="clover-user 8.1.0 OPM1.171019.019 V10.2.1.0.ODJCNXM release-keys"
+
+# Build Fingerprint
+BUILD_FINGERPRINT := "xiaomi/clover/clover:8.1.0/OPM1.171019.019/V10.2.1.0.ODJCNXM:user/release-keys"
+
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
@@ -41,3 +49,7 @@ PRODUCT_NAME := lineage_clover
 PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_DEVICE := clover
 PRODUCT_MODEL := MI PAD 4 PLUS
+
+PRODUCT_SYSTEM_NAME := clover
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
