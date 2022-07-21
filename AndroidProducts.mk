@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_clover.mk
+    $(LOCAL_DIR)/kscope_clover.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_clover-user \
-    lineage_clover-userdebug \
-    lineage_clover-eng
+    kscope_clover-user \
+    kscope_clover-userdebug \
+    kscope_clover-eng

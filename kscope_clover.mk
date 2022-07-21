@@ -6,14 +6,14 @@
 
 $(call inherit-product, device/xiaomi/clover/device.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Kaleidoscope stuff
+$(call inherit-product, vendor/kscope/target/product/tablet.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_clover
+PRODUCT_NAME := kscope_clover
 PRODUCT_DEVICE := clover
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Mi PAD 4
+PRODUCT_MODEL := MI PAD 4
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_CHARACTERISTICS := tablet
 
